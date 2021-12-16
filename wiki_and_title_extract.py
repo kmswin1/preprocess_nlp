@@ -45,7 +45,7 @@ Each file contains several documents in Tanl document format:
         ...
         </doc>
 Usage:
-  WikiExtractor.py [options]
+  wiki_and_title_extract.py [options]
 """
 
 import argparse
@@ -766,5 +766,5 @@ if __name__ == '__main__':
 
     """
     Usage
-    python3 WikiExtractor.py --infn "/Volumes/My Passport for Mac/00_nlp/enwiki/enwiki.xml.bz2"
+    python3 wiki_and_title_extract.py --infn "/Volumes/My Passport for Mac/00_nlp/enwiki/enwiki.xml.bz2"
     """
