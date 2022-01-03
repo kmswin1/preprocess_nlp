@@ -14,6 +14,7 @@ def clean_text(sentence):
     text = re.sub(r'\s+', ' ', text) #remove spaces
     text = re.sub(r"^\s+", '', text) #remove space from start
     text = re.sub(r'\s+$', '', text) #remove space from the end
+    text = re.sub('^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$', '', text) # remove email
     return text
 
 
